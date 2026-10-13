@@ -36,7 +36,7 @@ func printMessage (p: ptr): ptr {
     def i: Int;
     for i = 0, i < 10, ++i {
        Console.print("%s: %d, %d\n", p, var.value.i, i);
-       System.sleep(10000);
+       System.usleep(10000);
    }
    return 0;
 }
